@@ -36,5 +36,6 @@ It's a wrapper around [spatie/schema-org](https://github.com/spatie/schema-org) 
   ->contactPoint($page->schema('contactPoint')
   ->areaServed('Worldwide')
   ) ?>
+```
 
 It supports anything thats in the [RDFa spec](https://github.com/schemaorg/schemaorg/blob/master/data/schema.rdfa) for structured data which is about 600 data points. Refer to [schema.org site](http://schema.org/docs/schemas.html) for details on each bit. Go nuts :)
