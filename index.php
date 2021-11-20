@@ -3,7 +3,7 @@
  *
  * JSON Schema for Kirby 3
  *
- * @version   0.0.1
+ * @version   0.0.2
  * @author    James Steel <https://hashandsalt.com>
  * @copyright James Steel <https://hashandsalt.com>
  * @link      https://github.com/HashandSalt/kirby3-schema
