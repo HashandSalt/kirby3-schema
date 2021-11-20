@@ -38,4 +38,19 @@ It's a wrapper around [spatie/schema-org](https://github.com/spatie/schema-org) 
   ) ?>
 ```
 
+You can use the if() method to prevent missing data from breaking the chain.
+
+```
+<?= $site->schema('LocalBusiness')
+->name('Hash&Salt')
+
+->if($page->email()->exists(), function ($site) {
+  $site->schema('email')->email('email@example.com');
+})
+
+->contactPoint($page->schema('contactPoint')
+->areaServed('Worldwide')
+) ?>
+```
+
 It supports anything thats in the [RDFa spec](https://github.com/schemaorg/schemaorg/blob/master/data/schema.rdfa) for structured data which is about 600 data points. Refer to [schema.org site](http://schema.org/docs/schemas.html) for details on each bit. Go nuts :)
