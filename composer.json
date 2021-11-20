@@ -8,9 +8,9 @@
     "email": "hello@hashandsalt.com"
   }],
 
-  "require": {
-    "getkirby/composer-installer": "^1.1",
-    "spatie/schema-org": "^2.8"
+  "require": {    
+    "spatie/schema-org": "^3.8",
+    "getkirby/composer-installer": "^1.2"
   },
   "config": {
     "optimize-autoloader": true
